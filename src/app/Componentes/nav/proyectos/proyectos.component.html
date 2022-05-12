@@ -1,0 +1,16 @@
+<div> 
+    <button type="button" (click)="modalProyectos.show()"> <img src="../../../../assets/Proyectos.png">
+    <br> Proyectos </button> 
+</div>
+
+<app-modal #modalProyectos class="modal-demo" [maximizable]="true" [backdrop]="false">
+    <ng-container class="app-modal-header">Proyectos</ng-container>
+    <ng-container class="app-modal-body">
+      <h3>MODAL DIALOG</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+    </ng-container>
+    <ng-container class="app-modal-footer">
+     
+    </ng-container>
+  </app-modal>

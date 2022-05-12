@@ -1,0 +1,19 @@
+<div>
+    
+    <button type="button" (click)="modalAcerca.show()"> <img src="../../../../assets/Acerca de mí.png">
+    <br> Acerca de mí </button> 
+
+</div>
+
+
+<app-modal #modalAcerca class="modal-demo" [maximizable]="true" [backdrop]="false">
+  <ng-container class="app-modal-header">Acerca De Mí</ng-container>
+  <ng-container class="app-modal-body">
+    <h3>MODAL DIALOG</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+  </ng-container>
+  <ng-container class="app-modal-footer">
+   
+  </ng-container>
+</app-modal>
