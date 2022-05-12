@@ -7,7 +7,10 @@
     <title>Sabrina Baraldo</title>
     <link rel="icon" href="media/briefcase_preview_rev_1.ico">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script>src="java.js"</script>
+    <script>src="main.js"</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -36,26 +39,119 @@
 
 <nav>
 
-<div class="container">
-
-<div> <button> <img src="media/Acerca de mí.png">
+<div class="container-nav">
+    
+    
+<div> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAcerca"> <img src="media/Acerca de mí.png">
      <br> Acerca de mí </button> 
 </div>
 
-<div> <button> <img src="media/Experiencia.png">
+
+<div class="modal" id="modalAcerca" tabindex="-1" role="dialog" aria-labelledby="modalAcercaTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAcercaLongTitle">Acerca de mí</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExperiencia"> <img src="media/Experiencia.png">
     <br> Experiencia </button> 
 </div>
 
-<div> <button> <img src="media/Educación.png">
+<div class="modal" id="modalExperiencia" tabindex="-1" role="dialog" aria-labelledby="modalExperienciaTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalExperienciaLongTitle">Experiencia</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEducacion"> <img src="media/Educación.png">
     <br> Educación </button> 
 </div>
 
-<div> <button> <img src="media/skills.png">
+<div class="modal" id="modalEducacion" tabindex="-1" role="dialog" aria-labelledby="modalEducacionTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEducacionLongTitle">Educacion</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSkills"> <img src="media/skills.png">
     <br> Skills </button> 
 </div>
 
-<div> <button> <img src="media/proyectos.png">
+<div class="modal" id="modalSkills" tabindex="-1" role="dialog" aria-labelledby="modalSkillsTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSkillsLongTitle">Skills</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyectos"> <img src="media/proyectos.png">
     <br> Proyectos </button> 
+</div>
+
+<div class="modal" id="modalProyectos" tabindex="-1" role="dialog" aria-labelledby="modalProyectosTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProyectosLongTitle">Proyectos</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
 </div>
 
 
