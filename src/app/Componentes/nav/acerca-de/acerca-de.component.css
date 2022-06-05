@@ -32,4 +32,12 @@ div img{
   
 }
 
+div{
+    margin-left: 10px;
+}
 
+
+#header{
+
+    background-color: red important!;
+}

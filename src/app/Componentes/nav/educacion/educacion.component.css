@@ -29,3 +29,7 @@ div img{
     border-style: none;
     text-align: center;
 }
+
+div{
+    margin-left: 10px;
+}
