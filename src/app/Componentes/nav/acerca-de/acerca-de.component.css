@@ -37,7 +37,23 @@ div{
 }
 
 
-#header{
+#fotoPerfil{
 
-    background-color: red important!;
+    width: 330px;
+    height: 250px;
+
+}
+
+#nombre{
+    font-family: Nouveaux;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+#titulo{
+    font-family: Nouveaux;
+    font-size: 12px;
+    margin-top: 15px;
 }

@@ -14,6 +14,7 @@ import { ProyectosComponent } from './Componentes/nav/proyectos/proyectos.compon
 import { EncabezadoComponent } from './Componentes/encabezado/encabezado.component';
 import { NavComponent } from './Componentes/nav/nav.component';
 import { ModalModule } from 'ng-modal-lib';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ModalModule } from 'ng-modal-lib';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ModalModule
+    ModalModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

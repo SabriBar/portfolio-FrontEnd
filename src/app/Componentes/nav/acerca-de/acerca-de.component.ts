@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Modal } from 'bootstrap';
+import { JQueryStyleEventEmitter } from 'rxjs/internal/observable/fromEvent';
+import { DoBootstrap } from '@angular/core';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
+
 
 @Component({
   selector: 'app-acerca-de',
@@ -6,14 +12,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acerca-de.component.css']
 })
 
+
 export class AcercaDeComponent implements OnInit {
 
+  persona: persona = new persona("","","","","","","")
+
+  constructor(public personaService: PersonaService) {
+    
  
-  constructor() {}
+  }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.personaService.getPersona().subscribe(data => {this.persona = data})
+  }
 
 }
-
 

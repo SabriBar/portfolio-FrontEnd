@@ -48,7 +48,7 @@ body{
     background-color: transparent !important;
   }
 
-
+/*
   div .dt-icon-maximize {
 
     width: 20.5px;
@@ -67,7 +67,7 @@ body{
 
   }
 
-
+*/
   .dt-icon-close{
 
     
@@ -96,12 +96,101 @@ body{
   }
 
   .ui-modal{
-
+    
     background-color: #C0C0C0 !important;
     border-style:ridge;
-    height: 40px;
+    max-height: 550px !important;
+    max-width: fit-content !important;
     border-bottom-color: #C0C0C0;
     border-left-color: #FAFAFA;
     border-right-color: #C0C0C0;
-    border-width: 4px;
+    border-width: 5px;
+
+    /* height: auto;
+    max-height: 600px !important;
+    width: 550px !important;
+    */
+  
   }
+
+
+  ::-webkit-scrollbar{
+    background: repeating-conic-gradient(#bdbebd 0 25%,#fff 0 50%) 50%/2px 2px;
+    height: max-content;
+    
+  }
+
+  ::-webkit-scrollbar-thumb{
+  
+    background: #bdbebd;
+    border-top: 1.5px solid #fafafa;
+    border-left: 1.5px solid #fafafa;
+    border-bottom: 1.5px solid #5a5a5a;
+    border-right: 1.5px solid #5a5a5a;
+    outline: #dbdbdb;
+    border-top: 6px solid transparent;
+    background-clip: padding-box; 
+
+  }
+
+  #modalLogin .ui-modal{ 
+    
+    font-family: Nouveaux;
+    font-size: 9.2px;
+    text-align: left;
+    font-weight: bold;
+  
+  }
+
+
+  #modalLogin .ui-modal .grid{
+
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    justify-items: left; 
+  }
+
+  #modalLogin .ui-modal .grid img{
+    size: 70px;
+    margin-left: -20px;
+    margin-top: -6px;
+  }
+  
+  #modalLogin .ui-modal .grid input{
+
+    margin-left: 3px;
+    border-top: 2px ridge gray;
+    border-left: 2px ridge gray;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    box-shadow: 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
+    margin-right: 1px;
+  }
+
+  #modalLogin .ui-modal .grid .contra{
+    margin-left: 40px;
+  }
+
+  #modalLogin .ui-modal .grid button{
+
+    height: 25px;
+    width: 80px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 2px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+    color: #000;
+    font-family: nouveaux;
+    font-size: 9px;
+    font-weight: bold;
+    text-shadow: none;
+
+  }
+ 
+  #modalLogin ::-webkit-scrollbar{
+    background: none;
+    width: 0;
+    height: 0;
+  }
+  

@@ -3,14 +3,108 @@
     <br> Skills </button> 
 </div>
 
-<app-modal #modalSkills class="modal-demo" [maximizable]="true" [backdrop]="false">
+<app-modal id="modalSkills" #modalSkills class="modal-demo" [maximizable]="true" [backdrop]="false">
   <ng-container class="app-modal-header"><p class="titleModal">Skills</p></ng-container>
     <ng-container class="app-modal-body">
-      <h3>MODAL DIALOG</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+
+      <div class="container">
+        <!-- Contenedor de tablero y puntaje -->
+      
+        <div class="puntaje">
+          <!-- Puntaje -->
+          <div class="puntos" id="puntos">00</div>
+          <div class="smile">
+            <img src="../../../../assets/minesweeper.jpg">
+          </div>
+          <div class="tiempo" id="tiempo">00</div>
+        </div>
+      
+        <ul class="tablero">
+          <!-- Tablero de juego -->
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="numero2">2</li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="ladrillo"></li>
+          <li class="numero2">2</li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="numero2">2</li>
+          <li class="numero2">2</li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="ladrillo"></li>
+          <li class="numero1">1</li>
+          <li><i class="fa fa-flag"></i></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li class="numero2">2</li>
+          <li class="ladrillo"></li>
+          <li class="lost"><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="ladrillo"></li>
+          <li class="numero1">1</li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="numero2">2</li>
+          <li class="numero2">2</li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li class="numero2">2</li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-trophy"></i></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="numero2">2</li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li class="numero1">1</li>
+          <li class="ladrillo"></li>
+          <li class="numero1">1</li>
+          <li class="ladrillo"></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li><i class="fa fa-flag"></i></li>
+          <li class="ladrillo"></li>
+          <li class="numero1">1</li>
+          <li class="ladrillo"></li>
+          <li><i class="fa fa-bomb"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+        </ul>
+      </div>
     </ng-container>
     <ng-container class="app-modal-footer">
-     
     </ng-container>
   </app-modal>
