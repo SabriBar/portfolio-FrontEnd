@@ -3,8 +3,13 @@
     position: fixed;
     top: 15%;
     left: 60%;
-    cursor: move;
 
+}
+
+
+.ventana1 img{
+    border-left: 2px solid rgb(209, 205, 205);
+    border-bottom: 1.8px ridge gray;
 }
 
 .ventana1 div button{
@@ -23,15 +28,29 @@
     
 }
 
+.ventana1 img{
+    height: 205x;
+}
 
 #barra-sup{
 
+    height: 28px;
+    width: 376px;
     display: flex;
     justify-content: flex-end;
     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/98383ccf-a799-4094-bd98-45a3fc77982a/d8o06o0-9eeb8e22-5696-4f73-b5a0-80f2425713ed.png/v1/fill/w_1024,h_564,q_80,strp/windows_93_wallpaper_by_nesmaster23_d8o06o0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTY0IiwicGF0aCI6IlwvZlwvOTgzODNjY2YtYTc5OS00MDk0LWJkOTgtNDVhM2ZjNzc5ODJhXC9kOG8wNm8wLTllZWI4ZTIyLTU2OTYtNGY3My1iNWEwLTgwZjI0MjU3MTNlZC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eGaXqd0l2R2k4N64SxOEwHqwrGen0we21wxoIbJq97Y);
     background-size: cover;
     border-style:ridge;
     border-color: rgb(219, 218, 218);
+    border-bottom: 2.9px solid #c7c6c6;
+}
+
+
+div #barra-sup img{
+    padding-top: 2px;
+    padding-right: 237px;
+    border: none;
+    height: 19px;
 }
 
 #maxim{

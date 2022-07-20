@@ -1,24 +1,68 @@
-<div> <button (click)="modalLogin.show()"> <img src="../../../../assets/Login.png"> 
-    <br> Login </button> 
+<div> <button (click)="modalLogin.show()" *ngIf="!isLogged"> <img
+      src="../../../../assets/Login.png">
+    <br> Login </button>
 </div>
 
-<app-modal id="modalLogin" #modalLogin class="modal-demo" [maximizable]="true" [backdrop]="false">
-    <ng-container class="app-modal-header"><p class="titleModal">Login</p></ng-container>
-    <ng-container class="app-modal-body">
-      <div class="grid">
+<div> <button (click)="onLogOut()" *ngIf="isLogged"> <img
+  src="../../../../assets/Login.png">
+<br> Logout </button>
+</div>
+
+
+<app-modal id="modalLogin" #modalLogin class="modal-demo" [maximizable]="true" [backdrop]="false" (click)="cerrar()">
+  <ng-container class="app-modal-header">
+    <p class="titleModal">Login</p>
+  </ng-container>
+  <ng-container class="app-modal-body">
+    <div class="grid">
       <div class="icon-key"><img src="../../../../assets/login_icon.png"><br></div>
-      <div><br><p>Escriba el nombre y la contraseña para acceder al backend de mi Portfolio personal</p><br>
-           <form>
-                    <label for="user">Nombre de usuario:</label>
-                    <input type="text" id="user" name="user_name">
-                    <br><br>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" class="contra" required="">
-           </form>
-     </div>    
-     <div><button style="color: black;">Aceptar</button><br><br><button style="color: black;">Cancelar</button></div>      
-     </div>
-    </ng-container>
-    <ng-container class="app-modal-footer"></ng-container>
-  
-  </app-modal>
+      <div><br>
+        <p>Escriba el nombre y la contraseña para acceder al backend de mi Portfolio personal</p><br>
+
+        <form id="formulario-login" #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+          <div class="form-group">
+            <label for="nombreUsuario">Nombre de usuario:</label>
+            <input type="text" id="nombreUsuario" [ngModelOptions]="{standalone: true}" [(ngModel)]="nombreUsuario"
+              required>
+          </div>
+          <br><br>
+          <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" class="contra" [ngModelOptions]="{standalone: true}"
+              [(ngModel)]="password" required>
+          </div>
+
+
+        </form>
+
+      </div>
+      <div>
+        <button form="formulario-login" style="color: black;" type="submit" (click)="modalLogin.hide()" class="login">Aceptar</button><br><br>
+        <button form="formulario-login" (click)="cerrar()" (click)="modalLogin.hide()" style="color: black;">Cancelar</button>
+      </div>
+
+    </div>
+
+  </ng-container>
+
+  <ng-container class="app-modal-footer">
+
+  </ng-container>
+
+</app-modal>
+
+
+<!--
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+          <div class="form-group">
+            <label for="nombreUsuario">Nombre Usuario</label>
+            <input type="text" class="form-control" id="nombreUsuario" [ngModelOptions]="{standalone: true}" [(ngModel)]="nombreUsuario" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" class="contra" id="password" [ngModelOptions]="{standalone: true}" [(ngModel)]="password" required>
+          </div>
+          <button style="color: black;" type="submit" (click)="modalLogin.hide()" (click)="modalLogin.hide()">Aceptar</button><br><br>
+          <button (click)="cerrar()" (click)="modalLogin.hide()" style="color: black;">Cancelar</button>
+        </form>
+        -->

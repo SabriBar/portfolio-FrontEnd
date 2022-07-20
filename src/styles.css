@@ -135,6 +135,8 @@ body{
 
   #modalLogin .ui-modal{ 
     
+    width: 525px;
+    height: 210px;
     font-family: Nouveaux;
     font-size: 9.2px;
     text-align: left;
@@ -146,14 +148,15 @@ body{
   #modalLogin .ui-modal .grid{
 
     display: grid;
-    grid-template-columns: 15% 65% 20%;
+    grid-gap: 2px;
+    grid-template-columns: 13% 65% 23%;
     justify-items: left; 
   }
 
   #modalLogin .ui-modal .grid img{
     size: 70px;
     margin-left: -20px;
-    margin-top: -6px;
+    margin-top: 0px;
   }
   
   #modalLogin .ui-modal .grid input{
@@ -171,6 +174,10 @@ body{
     margin-left: 40px;
   }
 
+  #modalLogin .ui-modal .grid .login{
+    margin-top: 13px;
+  }
+
   #modalLogin .ui-modal .grid button{
 
     height: 25px;
@@ -185,12 +192,12 @@ body{
     font-size: 9px;
     font-weight: bold;
     text-shadow: none;
-
+    margin-left: 5px;
   }
+
  
   #modalLogin ::-webkit-scrollbar{
     background: none;
     width: 0;
     height: 0;
   }
-  

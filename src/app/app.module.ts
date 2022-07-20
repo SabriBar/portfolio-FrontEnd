@@ -15,6 +15,12 @@ import { EncabezadoComponent } from './Componentes/encabezado/encabezado.compone
 import { NavComponent } from './Componentes/nav/nav.component';
 import { ModalModule } from 'ng-modal-lib';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HomeComponent } from './Componentes/home/home.component';
+import { interceptorProvider, InterceptorServiceComponent } from './service/interceptor-service/interceptor-service.component';
+import { NgxRerenderComponent, NgxRerenderModule } from 'ngx-rerender';
+import { NewExperienciaComponent } from './Componentes/nav/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './Componentes/nav/experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -28,15 +34,24 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SkillsComponent,
     ProyectosComponent,
     EncabezadoComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    InterceptorServiceComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ModalModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule , 
+    ReactiveFormsModule,
+    NgxRerenderModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

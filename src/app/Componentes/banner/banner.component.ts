@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-banner',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
-
-  constructor() { }
+  isLogged = false;
+  
+  constructor(private tokenService: TokenService) {
+}
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    }else{
+      this.isLogged = false;
+    }
   }
+  
+
 
 }
