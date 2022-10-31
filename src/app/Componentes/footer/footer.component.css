@@ -1,0 +1,83 @@
+.taskbar{
+    cursor: default;
+    background-color: silver;
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    border-top: 2px outset #fff;
+    border-bottom: 1px solid silver;
+    z-index: 228;
+    width: 100%;
+    height: 32px;
+    margin-right: 0px;
+    position: absolute;
+    bottom: 0;
+    margin-top: 37px;
+    overflow: hidden;
+
+}
+.taskbar .start-button {
+    height: 27px;
+    width: 65px;
+    cursor: default;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 0%;
+    padding: 0 0 0 0px;
+    box-shadow: 1px 1px #000;
+    font-size: 15px;
+    font-family: Windows;
+    font-weight: bolder;
+    color: #000;
+    margin-left: 7px;
+    margin-bottom: 4px;
+    margin-top: 0.5px;
+    background: #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-shadow: 1px 1px 0 #fff inset, -1px -1px 0 #707070 inset;
+}
+
+.taskbar .start-button img{
+    width: 22px;
+    height: 24px;
+}
+
+
+.taskbar .time {
+    color:#212529;
+    margin-top: 2px;
+   
+    text-align: right;
+    font-size: 14px;
+    margin-right: 0px;
+}
+#page-content {
+    flex: 1 0 auto;
+}
+
+.col img{
+    margin-left: -843px;
+    height: 27px;
+    width: 2px;
+}
+
+
+#taskbar:-webkit-full-screen{
+    background-color: red;
+}
+
+#modalWindows{
+    background-color: #C0C0C0;
+    border-style: ridge;
+    border-bottom-color: #C0C0C0;
+    border-left-color: #FAFAFA;
+    border-right-color: #C0C0C0;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    font-family: nouveaux;
+    font-size: 10px;
+}

@@ -3,6 +3,16 @@
     src: url(assets/fonts/px_sans_nouveaux.ttf) format("opentype");
   }
 
+  @font-face {
+    font-family: Windows;
+    src: url(assets/fonts/WindowsRegular.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Countdown;
+    src: url(assets/fonts/Countdown.otf) format("opentype");
+  }
+
 
 body{
 
@@ -36,11 +46,10 @@ body{
   .titleModal{
 
     margin-top: 15px;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 1px;
     text-shadow: 0 1px #000;
-
-
+  
   }
 
   .ui-controlbar{
@@ -97,10 +106,8 @@ body{
 
   .ui-modal{
     
-    background-color: #C0C0C0 !important;
+    background-color: #C0C0C0;
     border-style:ridge;
-    max-height: 550px !important;
-    max-width: fit-content !important;
     border-bottom-color: #C0C0C0;
     border-left-color: #FAFAFA;
     border-right-color: #C0C0C0;
@@ -133,22 +140,33 @@ body{
 
   }
 
+  #modalAcerca .ui-modal{
+    background-color: #C0C0C0;
+    max-height: auto;
+    width: 600px !important;
+  }
+
+  #modalAcerca .ui-modal-footer{
+    padding: 0%;
+  }
+
   #modalLogin .ui-modal{ 
     
-    width: 525px;
+    width: 510px;
     height: 210px;
     font-family: Nouveaux;
     font-size: 9.2px;
     text-align: left;
     font-weight: bold;
-  
+    background-color: #C0C0C0;
+    z-index: 9000;
   }
 
 
   #modalLogin .ui-modal .grid{
 
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 2.2px;
     grid-template-columns: 13% 65% 23%;
     justify-items: left; 
   }
@@ -201,3 +219,152 @@ body{
     width: 0;
     height: 0;
   }
+
+  #modalSkills .ui-modal{
+    width: auto;
+    height: max-content;
+    background-color: #C0C0C0;
+  }
+
+  #modalSkills .ui-modal-body{
+    padding: 0%;
+    margin-left: -11px;
+    margin-bottom: -33px;
+    max-height: fit-content;
+  }
+
+  #modalSkills .ui-modal-footer{
+    margin-bottom: 15px;
+  }
+
+
+  #modalExperiencia .ui-modal{
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: 10%;
+    background-color: #C0C0C0;
+  }
+
+  #modalExperiencia .ui-modal-body{
+    padding-right: 4px;
+    margin-left: -6px;
+    margin-right: 4px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  #modalExperiencia .ui-modal-footer{
+    padding: 3px;
+    margin: 0px;
+
+  }
+
+  #modalEducacion .ui-modal{
+    width: auto;
+    height: auto;
+    border: 10%;
+    background-color: #C0C0C0;
+  }
+
+  #modalEducacion .ui-modal-body{
+    padding-right: 4px;
+    margin-left: -6px;
+    margin-right: 3px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  #modalEducacion .ui-modal-footer{
+    padding: 2pxpx;
+    margin: 0px;
+
+  }
+
+  #modalProyectos .ui-modal{
+    width: 350px;
+    height: 280px;
+    color: #FAFAFA !important;
+  }
+
+  #newExp .ui-modal{
+    min-width: 0px !important;
+    min-height: 0px !important;
+    width: 180px;
+    height: 30px;
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    left: 0px !important;
+    top: 0px !important;
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+    z-index: 1400;
+  }
+
+  #newExp .ui-modal div{
+    margin: 0px;
+    padding: 0px;
+    margin-left: -45px;
+    margin-top: -22px;
+  }
+  
+  #newExp .ui-modal-header{
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: #C0C0C0;
+  }
+
+  #newExp .ui-modal-footer{
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+  #newEdu .ui-modal{
+    min-width: 0px !important;
+    min-height: 0px !important;
+    width: 180px;
+    height: 30px;
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    left: 0px !important;
+    top: 0px !important;
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+  }
+
+  #newEdu .ui-modal div{
+    margin: 0px;
+    padding: 0px;
+    margin-left: -45px;
+    margin-top: -22px;
+  }
+  
+  #newEdu .ui-modal-header{
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: #C0C0C0;
+  }
+
+  #newEdu .ui-modal-footer{
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+  #infoProyecto .ui-modal{
+    background-color: #C0C0C0;
+}
+
+#modalProyectos .ui-modal{
+  width: 600px;
+  height: auto;
+}

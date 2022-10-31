@@ -1,16 +1,47 @@
-<div> 
-    <button type="button" (click)="modalProyectos.show()"> <img src="../../../../assets/Proyectos.png">
-    <br> Proyectos </button> 
+<div>
+  <button type="button" (click)="modalProyectos.show()"> <img src="../../../../assets/Proyectos.png">
+    <br> Proyectos </button>
 </div>
 
-<app-modal #modalProyectos class="modal-demo" [maximizable]="true" [backdrop]="false">
-  <ng-container class="app-modal-header"><p class="titleModal">Proyectos</p></ng-container>
-    <ng-container class="app-modal-body">
-      <h3>MODAL DIALOG</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-    </ng-container>
-    <ng-container class="app-modal-footer">
-     
-    </ng-container>
-  </app-modal>
+<app-modal id="modalProyectos" #modalProyectos class="modal-demo" [maximizable]="true" [backdrop]="false" style="z-index: 9400;">
+  <ng-container class="app-modal-header">
+    <p class="titleModal">Proyectos</p>
+  </ng-container>
+  <ng-container class="app-modal-body">
+
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Proyecto of proyecto">
+        
+          <td>
+          <a href={{Proyecto.linkP}}>
+            <img class="imgProy" src="../../../../assets/proyecto.png"
+           />
+          </a>
+        </td>
+          <td>{{Proyecto.nombreP}}</td>
+          <td>{{Proyecto.descripcionP}}</td>
+          <td>{{Proyecto.fechaP}}</td>
+
+          <td *ngIf="isLogged">
+            <button class="edit" routerLink="/editproyecto/{{Proyecto.id}}">EDITAR</button>
+          </td>
+
+          <td *ngIf="isLogged">
+            <button class="delete" (click)="delete(Proyecto.id)">BORRAR</button>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+
+  </ng-container>
+  <ng-container class="app-modal-footer">
+    <div class="col-lg-2">
+      <button type="button" id="newProyectoButton" #newProyecto class="modal-demo"
+        [routerLink]="[{outlets: {nuevoProyecto: ['nuevoProyecto']}}]" [routerLinkActive]="'active'" *ngIf="isLogged">
+        Agregar Proyecto
+      </button>
+    </div>
+  </ng-container>
+</app-modal>

@@ -1,0 +1,43 @@
+
+form {
+    font-family: nouveaux;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 35%;
+    background-color: #C0C0C0;
+    width: fit-content;
+    padding: 40px;
+    box-shadow: 0px 6px 46px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 6px 46px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 46px 1px rgba(0,0,0,0.75);
+}
+
+input{
+    margin-top: -10px;
+    font-size: 12px;
+    border-radius: 0%;
+    border-style: ridge;
+    border-color: #C0C0C0;
+}
+
+
+Button {
+    background-color: #C0C0C0;
+    color: blue;
+    font-weight: bold;
+    font-family: nouveaux;
+    font-size: 10px;
+    width: 152px;
+    height: 35px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid rgb(100, 100, 100);
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+}
+

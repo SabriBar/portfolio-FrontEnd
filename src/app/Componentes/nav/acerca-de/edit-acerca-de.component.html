@@ -1,0 +1,78 @@
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="persona.titulo" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="provincia">Provincia</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="provincia" name="provincia" [(ngModel)]="persona.provincia" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="correoElectronico">Correo Electronico</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="correoElectronico" name="correoElectronico" [(ngModel)]="persona.correoElectronico" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="acercaDeMi">Descripcion</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="acercaDeMi" name="acercaDeMi" [(ngModel)]="persona.acercaDeMi" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="url">Foto de Perfil</label>
+                    <br>
+                    <br>
+                    <input type="file" class="form-control" id="url" name="url" required (change)="uploadImage($event)" accept=".jpg, ,jpeg, .png">
+                </div>
+                <br>
+                <div class="imgPerfil">
+                    <img [src]="urlService.enlace" width="250px" style="margin-bottom: 8px;">
+                </div>
+                <br>
+                <button>
+                    Actualizar Perfil
+                </button>
+
+            </form>
+        <div>
+    </div>
+</div>

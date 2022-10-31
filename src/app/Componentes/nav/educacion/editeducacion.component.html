@@ -1,0 +1,58 @@
+<div class="container" *ngIf="educacion">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <div class="form-group">
+                    <label for="tituloE">Titulo</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="tituloE" name="tituloE" [(ngModel)]="educacion.tituloE" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="institucionE">Institucion</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="institucionE" name="institucionE" [(ngModel)]="educacion.institucionE" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="tipoE">Tipo de educacion</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="tipoE" name="tipoE" [(ngModel)]="educacion.tipoE" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="inicioEdu">Fecha de inicio</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="inicioEdu" name="inicioEdu" [(ngModel)]="educacion.inicioEdu" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="finalizacionEdu">Fecha de finalizacion</label>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="finalizacionEdu" name="finalizacionEdu" [(ngModel)]="educacion.finalizacionEdu" required>
+                </div>
+
+                <br>
+
+                <button>
+                    Editar educacion
+                </button>
+
+            </form>
+        <div>
+    </div>
+</div>

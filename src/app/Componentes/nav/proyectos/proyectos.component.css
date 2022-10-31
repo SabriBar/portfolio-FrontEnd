@@ -1,36 +1,92 @@
-   div img{
+   div img {
 
-    width: 75px;
-    height: 65px;
-    padding: 20px 15px 0px ;
-    content: 0px;
-    margin: 5px 0px 0px;
-    margin-bottom: 6px;
+       width: 75px;
+       height: 65px;
+       padding: 20px 15px 0px;
+       content: 0px;
+       margin: 5px 0px 0px;
+       margin-bottom: 6px;
 
-}
+   }
 
 
-    div button{
+   div button {
 
-    background: transparent;
-    position: relative;
-    letter-spacing: 0%;
-    word-spacing: -3px;
-    font-size: 12.2px;
-    font-stretch: 100%;
-    line-height: 15px;
-    text-shadow: 0 1.5px #000;
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-    color: #fff;
-    font-family: monospace;
-    white-space: normal;
-    content: 0px;  
-    margin-top: 0px;
-    padding-top: 0px;
-    border-style: none;
-    text-align: center;
-}
+       background: transparent;
+       position: relative;
+       letter-spacing: 0%;
+       word-spacing: -3px;
+       font-size: 12.2px;
+       font-stretch: 100%;
+       line-height: 15px;
+       text-shadow: 0 1.5px #000;
+       font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+       color: #fff;
+       font-family: monospace;
+       white-space: normal;
+       content: 0px;
+       margin-top: 0px;
+       padding-top: 0px;
+       border-style: none;
+       text-align: center;
+   }
 
-div{
-    margin-left: 10px;
-}
+   div {
+       margin-left: 10px;
+   }
+
+   .imgProy {
+       margin-bottom: 11px;
+   }
+
+   .table td {
+       font-family: Nouveaux;
+       color: #000;
+       text-shadow: none;
+       font-size: 9.5px;
+       padding-top: 20px;
+       align-items: flex-end;
+   }
+
+
+   td button {
+
+       height: 25px;
+       width: 80px;
+       border-top: 1px solid #fff;
+       border-left: 1px solid #fff;
+       border-right: 2px solid gray;
+       border-bottom: 1px solid gray;
+       box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+       color: #000;
+       font-family: nouveaux;
+       font-size: 9px;
+       font-weight: bold;
+       text-shadow: none;
+       margin-left: 5px;
+       background: #C0C0C0;
+
+   }
+
+   .col-lg-2 button {
+
+       background: #C0C0C0;
+       border-width: 1px;
+       border-color: #FFFFFF #808080 #808080 #FFFFFF;
+       font-weight: bold;
+       font-family: nouveaux;
+       text-align: center;
+       font-size: 9px;
+       outline: 1px solid #000000;
+       background: #C0C0C0;
+       border-width: 1px;
+       border-style: solid;
+       padding: 4px 10px;
+       margin: 20px auto 3px;
+       bottom: 0px;
+       text-shadow: none;
+       color: #000;
+       margin-left: 220px;
+       margin-top: -40px;
+       width: 100px;
+   }

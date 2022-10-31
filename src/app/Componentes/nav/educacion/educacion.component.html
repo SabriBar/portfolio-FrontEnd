@@ -1,17 +1,61 @@
 <div>
-     <button type="button" (click)="modalEducacion.show()"> <img src="../../../../assets/Educación.png">
-    <br> Educación </button> 
+  <button type="button" (click)="modalEducacion.show()"> <img src="../../../../assets/Educación.png">
+    <br> Educación </button>
 </div>
 
-<app-modal #modalEducacion class="modal-demo" [maximizable]="true" [backdrop]="false">
-  <ng-container class="app-modal-header"><p class="titleModal">Educación</p></ng-container>
-    <ng-container class="app-modal-body">
-      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-    </ng-container>
-    <ng-container class="app-modal-footer">
-      
-    </ng-container>
-  </app-modal>
-  
+<app-modal id="modalEducacion" #modalEducacion class="modal-demo" [maximizable]="true" [backdrop]="false" style="z-index: 9200;">
+  <ng-container class="app-modal-header">
+    <p class="titleModal">Educación</p>
+  </ng-container>
+  <ng-container class="app-modal-body">
+
+    <div class="barra-herramientas">
+      <div class="archivo">
+        <button (click)="newEdu.show()">Archivo</button>
+      </div>
+      <div><p>Edicion</p></div>
+      <div><p>Ver</p></div>
+      <div><p>Ayuda</p></div>
+      </div>
+
+      <app-modal id="newEdu" #newEdu class="modal-demo" [backdrop]="false">
+        <ng-container class="app-modal-body">
+          <button id="newEduButton" #newEduButton type="button" [routerLink]="[{outlets: {nuevaEducacion: ['nuevaedu']}}]" [routerLinkActive]="'active'" *ngIf="isLogged">
+            Agregar Educación
+          </button>
+        </ng-container>
+      </app-modal>
+
+    <table class="columnas-edu">
+      <tr class="tableHeader">
+      <th>Titulo</th>
+      <th>Nombre Institucion</th>
+      <th>Tipo</th>
+      <th>Fecha Inicio</th>
+      <th>Fecha Finalizacion</th>
+    </tr>
+    <tbody *ngFor="let Educacion of educacion">
+      <tr>
+        <td>{{Educacion.tituloE}}</td>
+        <td>{{Educacion.institucionE}}</td>
+        <td>{{Educacion.tipoE}}</td>
+        <td>{{Educacion.inicioEdu}}</td>
+        <td>{{Educacion.finalizacionEdu}}</td>
+
+        <div class="edicion">
+          <td *ngIf="isLogged">
+            <button routerLink="/editedu/{{Educacion.id}}">EDITAR</button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="deleteButton" (click)="delete(Educacion.id)">BORRAR</button>
+          </td>
+        </div>
+      </tr>
+    </tbody>
+    </table>
+
+  </ng-container>
+  <ng-container class="app-modal-footer">
+
+  </ng-container>
+</app-modal>

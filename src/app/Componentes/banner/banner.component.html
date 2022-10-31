@@ -1,9 +1,9 @@
-<div class="ventana1" id="ventana_1" draggable="true" *ngIf="!isLogged">
+<div class="ventana1" id="ventana_1" draggable="true" *ngIf="!isLogged" cdkDrag>
     <div id="barra-sup"><img src="../../../assets/terminal-icon2.PNG"><p class="terminal"><button id="maxim"></button> <button id="close"></button></div>
       <img class="banner" src="../assets/bannerhello.png" >
   </div>
 
-  <div class="ventana1" id="ventana_1" draggable=true *ngIf="isLogged">
+  <div class="ventana1" id="ventana_1" draggable=true *ngIf="isLogged" cdkDrag>
     <div id="barra-sup"> <button id="maxim"></button> <button id="close"></button></div>
       <img src="../assets/bannerhelloback.png" >
   </div>

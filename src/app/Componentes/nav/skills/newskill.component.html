@@ -1,0 +1,27 @@
+<div class="container" cdkDrag>
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+                <div class="closeButton">
+                    <button>x</button>
+                </div>
+                
+                <div class="form-group">
+                    <label for="skillUrl">Nombre de la Habilidad</label>
+                    <input type="text" class="form-control" id="nombreS" name="skillUrl" [(ngModel)]="skillUrl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rangoUrl">Nivel de la Habilidad</label>
+                    <input type="text" class="form-control" id="rangoUrl" name="rangoUrl" [(ngModel)]="rangoUrl" required>
+                </div>
+
+                <button class="agregar">
+                    Agregar Skill
+                </button>
+
+            </form>
+        <div>
+    </div>
+</div>

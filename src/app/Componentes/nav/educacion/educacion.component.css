@@ -1,15 +1,15 @@
-div img{
+div img {
 
     width: 75px;
     height: 65px;
-    padding: 20px 15px 0px ;
+    padding: 20px 15px 0px;
     content: 0px;
     margin: 5px 0px 0px;
 
 }
 
 
- div button{
+div button {
 
     background: transparent;
     position: relative;
@@ -19,17 +19,188 @@ div img{
     font-stretch: 100%;
     line-height: 15px;
     text-shadow: 0 1.5px #000;
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     color: #fff;
     font-family: monospace;
     white-space: normal;
-    content: 0px;  
+    content: 0px;
     margin-top: 0px;
     padding-top: 0px;
     border-style: none;
     text-align: center;
 }
 
-div{
+div {
     margin-left: 10px;
+}
+
+
+.barra-herramientas {
+    display: flex;
+    flex-direction: row;
+    margin-left: -13px;
+}
+
+.barra-herramientas div {
+    display: block;
+    margin-top: -10px;
+}
+
+
+.barra-herramientas p {
+    font-family: Windows;
+    font-size: 13.5px;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+p::first-letter {
+    text-decoration-line: underline;
+}
+
+
+.table {
+    border-right: outset 1px rgba(17, 17, 17, 0.637);
+    border-left: outset 1px rgba(17, 17, 17, 0.637);
+    margin-bottom: 0px;
+    height: 100px;
+}
+
+.table td {
+    border: none;
+}
+
+.table tbody {
+    background-color: #fff;
+    margin-left: -30px;
+    height: auto;
+}
+
+
+table {
+    border-collapse: collapse;
+    font-family: Windows;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+
+.columnas-edu td {
+
+    font-family: Windows;
+    font-size: 13.5px;
+    margin-left: 23.9px;
+}
+
+.columnas-edu div {
+    margin-left: 15px;
+    margin-right: 28px;
+
+}
+
+.archivo button {
+    font-family: Windows;
+    font-size: 13.5px;
+    margin-right: 12px;
+    color: #0000FE;
+    text-decoration: underline;
+    text-shadow: none;
+    margin-right: -1px;
+}
+
+
+#newEduButton {
+    background-color: #C0C0C0;
+    font-family: nouveaux;
+    font-size: 9px;
+    width: 152px;
+    height: 35px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid rgb(100, 100, 100);
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+}
+
+.columnas-edu th {
+    margin-left: -0.2px;
+    margin-top: -16px;
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) -1%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 3%, rgb(192, 192, 192) 15%, rgb(192, 192, 192) 15%, rgb(192, 192, 192) 17%, rgb(192, 192, 192) 59%, rgb(192, 192, 192) 59%, rgb(192, 192, 192) 63%, rgb(192, 192, 192) 73%, rgb(192, 192, 192) 73%, rgb(192, 192, 192) 79%, rgb(192, 192, 192) 79%, rgb(192, 192, 192) 79%, rgb(192, 192, 192) 83%, rgb(192, 192, 192) 86%, rgb(137, 137, 137) 96%, rgb(137, 137, 137) 96%, rgb(137, 137, 137) 97%, rgb(137, 137, 137) 98%, rgb(137, 137, 137) 98%, rgb(137, 137, 137) 99%, rgb(137, 137, 137) 99%, rgb(137, 137, 137) 99%, rgb(137, 137, 137) 100%, rgb(137, 137, 137) 100%, rgb(137, 137, 137) 100%, rgb(137, 137, 137) 100%, rgb(137, 137, 137) 100%, rgb(137, 137, 137) 101%);
+    border-top: inset 1.2px rgba(15, 15, 15, 0.589);
+    border-right: inset 1.3px rgba(15, 15, 15, 0.5);
+    border-left: inset 1.3px rgba(15, 15, 15, 0.534);
+    border-bottom: inset 1.3px rgba(15, 15, 15, 0.514);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+
+}
+
+
+.columnas-edu tbody td {
+    background-color: #fff;
+    padding: 10px;
+    width: 140px;
+    font-size: 9px;
+    font-family: nouveaux;
+}
+
+.edicion {
+    background-color: #C0C0C0 !important;
+    padding: 0%;
+    margin: 0% !important;
+    width: auto !important;
+}
+
+.edicion td {
+    background-color: #C0C0C0 !important;
+    width: max-content !important;
+}
+
+td button {
+
+    height: 25px;
+    width: 80px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 2px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+    color: #000;
+    font-family: nouveaux;
+    font-size: 9px;
+    font-weight: bold;
+    text-shadow: none;
+    margin-right: -10px;
+    margin-left: -5px;
+}
+
+.deleteButton {
+    padding-left: -10px;
+}
+
+
+.archivo button {
+    font-family: Windows;
+    font-size: 13.5px;
+    margin-right: 12px;
+    color: #0000FE;
+    text-decoration: underline;
+    text-shadow: none;
+    margin-right: -1px;
+}
+
+
+#newEduButton {
+    background-color: #C0C0C0;
+    font-family: nouveaux;
+    font-size: 9px;
+    width: 152px;
+    height: 35px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid rgb(100, 100, 100);
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
 }

@@ -1,8 +1,12 @@
 
-<div class="container">
+<div class="container" cdkDrag>
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                
+                <div class="closeButton">
+                    <button>x</button>
+                </div>
 
                 <div class="form-group">
                     <label for="nombreE">Nombre de la Empresa</label>
@@ -14,7 +18,22 @@
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
 
-                <button>
+                <div class="form-group">
+                    <label for="inicioE">Fecha de Inicio</label>
+                    <input type="text" class="form-control" id="inicioE" name="inicioE" [(ngModel)]="inicioE" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="finalizacionE">Fecha de Finalizacion</label>
+                    <input type="text" class="form-control" id="finalizacionE" name="finalizacionE" [(ngModel)]="finalizacionE" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cargoE">Cargo</label>
+                    <input type="text" class="form-control" id="cargoE" name="cargoE" [(ngModel)]="cargoE" required>
+                </div>
+
+                <button class="agregar">
                     Agregar experiencia
                 </button>
 

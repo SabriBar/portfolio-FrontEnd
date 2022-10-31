@@ -1,21 +1,29 @@
-<div>  
-    <button type="button" (click)="modalAcerca.show()"> <img src="../../../../assets/Acerca de mí.png">
-    <br> Acerca de mí </button> 
+<div>
+  <button type="button" (click)="modalAcerca.show()"> <img src="../../../../assets/Acerca de mí.png">
+    <br> Acerca de mí </button>
 </div>
 
 
 <app-modal id="modalAcerca" #modalAcerca class="modal-demo" [maximizable]="true" [backdrop]="false">
-  <ng-container class="app-modal-header"><p class="titleModal">Acerca De Mí</p></ng-container>
+  <ng-container class="app-modal-header">
+    <p class="titleModal">Acerca De Mí</p>
+  </ng-container>
   <ng-container class="app-modal-body">
-    <h3><img id="fotoPerfil" src="../../../../assets/pic acerca.jpg" alt="Sabrina Baraldo Moreno"></h3>
-    <br><h3 id="nombre">{{persona.nombre}} {{persona.apellido}}</h3>
+    <div><img id="fotoPerfil" src={{persona.url}}></div>
+    <br>
+    <h3 id="nombre">{{persona.nombre}} {{persona.apellido}}</h3>
     <h6 id="titulo">Full Stack Developer Junior</h6>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+    <div class="info">
+      <h6> <img src="../../../../assets/location.png">{{persona.provincia}}</h6>
+      <h6> <img src="../../../../assets/mail.png"> {{persona.correoElectronico}}</h6>
+    </div>
+    <p class="descripcion">{{persona.acercaDeMi}}</p>
+    <br>
+    <button id="editDescriptionButton" #editDesc class="modal-demo" type="button" routerLink="/editDescripcion/1"
+      [routerLinkActive]="'active'" *ngIf="isLogged">
+      Editar Informacion
+    </button>
   </ng-container>
   <ng-container class="app-modal-footer">
   </ng-container>
-
 </app-modal>

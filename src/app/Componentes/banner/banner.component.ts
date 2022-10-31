@@ -19,7 +19,4 @@ export class BannerComponent implements OnInit {
       this.isLogged = false;
     }
   }
-  
-
-
 }
